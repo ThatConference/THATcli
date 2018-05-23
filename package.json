@@ -1,0 +1,29 @@
+{
+  "name": "thatcli",
+  "version": "0.0.1",
+  "description": "THAT Conference cli for the api server",
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "contributors": [
+    {
+      "name": "Clark Sell",
+      "email": "hello@unspecified.io",
+      "url": "http://unspecified.io/"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ThatConference/THATcli.git"
+  },
+  "engines": {
+    "node": "^8.9"
+  },
+  "scripts": {
+    "start": "node ./index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cli-table": "^0.3.1",
+    "graphql-request": "^1.6.0"
+  }
+}
