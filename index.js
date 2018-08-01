@@ -2,7 +2,7 @@ const Table = require("cli-table");
 const request = require("graphql-request").request;
 
 const query = `{
-    devices {
+    buttons {
         id
         tcId 
         coreId 
@@ -20,7 +20,7 @@ const table = new Table({
 const url = "https://api.thatconference.com/graphql";
 
 request(url, query).then(data => {
-  const tableGuts = data.devices.map(item => {
+  const tableGuts = data.buttons.map(item => {
     return [
       item.id,
       item.tcId,
